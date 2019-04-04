@@ -8,8 +8,28 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>Iceland</h1>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+    <div style={{ 
+      marginBottom: `1rem`,
+      position: `relative`
+    }}>
+      <div style={{
+        display: `flex`,
+        justifyContent: `center`,
+        alignItems: `center`,
+        position: `absolute`,
+        top: `0`,
+        right: `0`,
+        bottom: `0`,
+        left: `0`,
+        textAlign: `center`,
+        zIndex: `2`
+       }}>
+        <h1 style={{ 
+          color:`white`,
+          fontSize: `4.5rem`,
+          fontWeight: `900`
+        }}>Iceland</h1>  
+      </div>
       <Image />
     </div>
   </Layout>

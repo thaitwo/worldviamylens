@@ -7,11 +7,10 @@
   color: white;
   display: block;
   line-height: 2rem;
-  opacity: .7;
   padding: .2rem 1rem;
   text-decoration: none;
 }
 
 .listLink:hover {
-  opacity: 1;
+  text-decoration: underline;
 }
