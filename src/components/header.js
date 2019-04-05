@@ -12,7 +12,7 @@ const Header = () => (
       top: `1rem`,
       right: `1rem`,
       left: `1rem`,
-      zIndex: `1`
+      zIndex: `2`
     }}
   >
     <div style={{

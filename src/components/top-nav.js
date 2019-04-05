@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import topnavStyles from "./css/topnav.module.css"
+import topnavStyles from "./css/topnav.module.scss"
 
 const ListLink = props => (
  <li className={topnavStyles.listItem}>
