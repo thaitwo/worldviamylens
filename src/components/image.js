@@ -34,19 +34,21 @@ export const Image = (props) => (
       }
     `}
     render={(data) => {
-      
+      // Find and fetch the image based on filename
       const image = data.images.edges.find(n => {
         return n.node.relativePath.includes(props.filename);
       });
-      
+      // Return null if no image exist
       if (!image) {
         return null;
       }
+
       const imageSizes = image.node.childImageSharp.sizes;
       return (
         <Img
           alt={props.alt}
           sizes={imageSizes}
+          className={props.className}
         />
       );
     }}

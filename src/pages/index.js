@@ -13,7 +13,6 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <div style={{ 
-      marginBottom: `1rem`,
       position: `relative`
     }}>
       <div style={{
@@ -36,21 +35,33 @@ const IndexPage = () => (
             textShadow: `0 4px 8px rgba(0,0,0,.6)`
           }}>Iceland</h1>  
 
-          <Button to="/about">View Gallery</Button>
+          <Button to="/#gallery">View Gallery</Button>
         </div>
         
       </div>
-      <Image filename="iceland-1.jpg" />
+      <div style={{
+        height: `100vh`,
+        padding: `1rem`,
+      }}>
+        <Image className="featuredImage" filename="iceland-1.jpg" sizes={{aspectRatio: 4/3}} />
+      </div>
+      
+      
     </div>
-    <div style={{
+    <div id="gallery" style={{
       display: `flex`,
       flexWrap: `wrap`,
-      justifyContent: `space-between`
+      justifyContent: `space-between`,
+      margin: `0 1rem 2rem`
     }}>
       <Gallerybox filename="bali.jpg" title="Indonesia" href="/about" alt="Tegalalang Rice Terrace in Bali, Indonesia" />
       <Gallerybox filename="myanmar.jpg" title="Myanmar" href="/about" alt="Taung Wine Mountain" />
       <Gallerybox filename="vietnam.jpg" title="Vietnam" href="/about" alt="Fish market in Vietnam" />
       <Gallerybox filename="taiwan.jpg" title="Taiwan" href="/about" alt="Taiwan" />
+      <Gallerybox filename="bali.jpg" title="Japan" href="/about" alt="Tegalalang Rice Terrace in Bali, Indonesia" />
+      <Gallerybox filename="myanmar.jpg" title="Thailand" href="/about" alt="Taung Wine Mountain" />
+      <Gallerybox filename="vietnam.jpg" title="Sri Lanka" href="/about" alt="Fish market in Vietnam" />
+      <Gallerybox filename="taiwan.jpg" title="California" href="/about" alt="Taiwan" />
     </div>
   </Layout>
 )
