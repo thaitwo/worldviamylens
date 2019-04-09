@@ -1,0 +1,30 @@
+.galleryBox {
+  flex: 1;
+  flex-basis: 32.33333333%;
+  flex-grow: unset;
+  margin-right: 1%;
+  margin-bottom: 1rem;
+  position: relative;
+
+  &:nth-child(3) {
+    margin-right: 0;
+  }
+
+  a {
+    display: block;
+    text-align: center;
+  }
+}
+
+.galleryBoxTitle {
+  color: white;
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  text-shadow: 0 1px 4px rgba(0,0,0,.6);
+  transform: translateY(-50%);
+  z-index: 2;
+}
+

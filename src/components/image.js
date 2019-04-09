@@ -1,6 +1,7 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+// import { node } from "prop-types";
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -13,47 +14,42 @@ import Img from "gatsby-image"
  * - `StaticQuery`: https://gatsby.dev/staticquery
  */
 
-export const FeaturedImage = () => (
+export const Image = (props) => (
   <StaticQuery
     query={graphql`
       query {
-        image: file(relativePath: { eq: "iceland-1.jpg" }) {
-          childImageSharp {
-            fluid(maxWidth: 1920) {
-              ...GatsbyImageSharpFluid
+        images: allFile {
+          edges {
+            node {
+              relativePath
+              name
+              childImageSharp {
+                sizes(maxWidth: 600) {
+                  ...GatsbyImageSharpSizes
+                }
+              }
             }
           }
         }
       }
     `}
-    render={data => <Img 
-      fluid={data.image.childImageSharp.fluid}
-    />}
+    render={(data) => {
+      
+      const image = data.images.edges.find(n => {
+        return n.node.relativePath.includes(props.filename);
+      });
+      
+      if (!image) {
+        return null;
+      }
+      const imageSizes = image.node.childImageSharp.sizes;
+      return (
+        <Img
+          alt={props.alt}
+          sizes={imageSizes}
+        />
+      );
+    }}
   />
 )
 
-export const GalleryBox = () => (
-  <StaticQuery
-    query={graphql`
-      query {
-        imageOne: file(relativePath: { eq: "bali.jpg" }) {
-          childImageSharp {
-            fluid(maxWidth: 600) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        imageTwo: file(relativePath: { eq: "myanmar.jpg" }) {
-          childImageSharp {
-            fluid(maxWidth: 600) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
-    `}
-    render={data => (
-    <Img fluid={data.imageOne.childImageSharp.fluid}/>
-    )}
-  />
-)

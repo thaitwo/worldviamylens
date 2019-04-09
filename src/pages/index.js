@@ -1,8 +1,10 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import { FeaturedImage, GalleryBox } from "../components/image"
+import { Image } from "../components/Image.js"
+import Gallerybox from "../components/Gallerybox.js"
+
 import SEO from "../components/seo"
 import Button from "../components/button"
 // import buttonStyles from "../components/css/button.module.scss"
@@ -38,8 +40,17 @@ const IndexPage = () => (
         </div>
         
       </div>
-      <FeaturedImage />
-      <GalleryBox />
+      <Image filename="iceland-1.jpg" />
+    </div>
+    <div style={{
+      display: `flex`,
+      flexWrap: `wrap`,
+      justifyContent: `space-between`
+    }}>
+      <Gallerybox filename="bali.jpg" title="Indonesia" href="/about" alt="Tegalalang Rice Terrace in Bali, Indonesia" />
+      <Gallerybox filename="myanmar.jpg" title="Myanmar" href="/about" alt="Taung Wine Mountain" />
+      <Gallerybox filename="vietnam.jpg" title="Vietnam" href="/about" alt="Fish market in Vietnam" />
+      <Gallerybox filename="taiwan.jpg" title="Taiwan" href="/about" alt="Taiwan" />
     </div>
   </Layout>
 )

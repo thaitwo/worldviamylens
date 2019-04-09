@@ -31,7 +31,7 @@ const Header = () => (
         <ListLink to="/#gallery">Galleries</ListLink>
         <ListLink to="/about">About</ListLink>
         <ListLink to="/blog">Blog</ListLink>
-        <li style={{ display: `inline-block` }}><a href="https://www.instagram.com/worldviamylens" target="_blank" style={{ color: `white`, padding: `.2rem 1rem`, textDecoration: `none` }}>Instagram</a></li>
+        <li style={{ display: `inline-block` }}><a href="https://www.instagram.com/worldviamylens" style={{ color: `white`, padding: `.2rem 1rem`, textDecoration: `none` }}>Instagram</a></li>
       </ul>
     </div>
   </header>
