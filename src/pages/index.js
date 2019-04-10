@@ -7,7 +7,7 @@ import Gallerybox from "../components/Gallerybox.js"
 
 import SEO from "../components/seo"
 import Button from "../components/button"
-// import buttonStyles from "../components/css/button.module.scss"
+import styles from "../components/css/gallery.module.scss"
 
 const IndexPage = () => (
   <Layout>
@@ -25,7 +25,7 @@ const IndexPage = () => (
         bottom: `0`,
         left: `0`,
         textAlign: `center`,
-        zIndex: `1`
+        zIndex: `2`
       }}>
         <div>
           <h1 style={{ 
@@ -42,7 +42,9 @@ const IndexPage = () => (
       <div style={{
         height: `100vh`,
         padding: `1rem`,
+        position: `relative`
       }}>
+        <div className={styles.overlayFeaturedImage}></div>
         <Image className="featuredImage" filename="iceland-1.jpg" sizes={{aspectRatio: 4/3}} />
       </div>
       
@@ -58,10 +60,11 @@ const IndexPage = () => (
       <Gallerybox filename="myanmar.jpg" title="Myanmar" href="/about" alt="Taung Wine Mountain" />
       <Gallerybox filename="vietnam.jpg" title="Vietnam" href="/about" alt="Fish market in Vietnam" />
       <Gallerybox filename="taiwan.jpg" title="Taiwan" href="/about" alt="Taiwan" />
-      <Gallerybox filename="bali.jpg" title="Japan" href="/about" alt="Tegalalang Rice Terrace in Bali, Indonesia" />
-      <Gallerybox filename="myanmar.jpg" title="Thailand" href="/about" alt="Taung Wine Mountain" />
-      <Gallerybox filename="vietnam.jpg" title="Sri Lanka" href="/about" alt="Fish market in Vietnam" />
-      <Gallerybox filename="taiwan.jpg" title="California" href="/about" alt="Taiwan" />
+      <Gallerybox filename="japan.jpg" title="Japan" href="/about" alt="Japan" />
+      <Gallerybox filename="thailand.jpg" title="Thailand" href="/about" alt="Thailand" />
+      <Gallerybox filename="srilanka.jpg" title="Sri Lanka" href="/about" alt="Sri Lanka" />
+      <Gallerybox filename="california.jpg" title="California" href="/about" alt="California" />
+      <Gallerybox filename="newyork.jpg" title="New York" href="/about" alt="New York" />
     </div>
   </Layout>
 )

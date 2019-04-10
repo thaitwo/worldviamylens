@@ -11,6 +11,7 @@ import { StaticQuery, graphql } from "gatsby"
 
 import Header from "./Header"
 import "./layout.scss"
+import "./css/footer.scss"
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -27,11 +28,10 @@ const Layout = ({ children }) => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
         <div style={{
-          // margin: `1rem 1rem 0 1rem`,
           paddingTop: 0,
         }}>
           <main style={{ paddingTop: `0` }}>{children}</main>
-          <footer>
+          <footer className="footer">
             © {new Date().getFullYear()} Worldviamylens
           </footer>
         </div>

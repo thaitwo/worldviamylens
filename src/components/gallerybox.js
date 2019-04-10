@@ -6,7 +6,8 @@ const Gallerybox = props => (
   <figure className={styles.galleryBox}>
     <a href={props.href}>
       <h2 className={styles.galleryBoxTitle}>{props.title}</h2>
-      <Image filename={props.filename}/>
+      <div className={styles.overlay}></div>
+      <Image className={styles.galleryBoxImage} filename={props.filename}/>
     </a>
   </figure>
 )
