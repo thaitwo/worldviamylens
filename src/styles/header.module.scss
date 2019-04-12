@@ -1,0 +1,93 @@
+/*
+** HEADER
+*/
+
+.header {
+  height: 50vh;
+  padding: 1rem;
+  position: relative;
+  z-index: 3;
+}
+
+.headerLarge {
+  height: 100vh;
+  padding: 1rem;
+  position: relative;
+  z-index: 3;
+}
+
+.titleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.titleInnerContainer {
+  text-align: center;
+}
+
+.title {
+  color:white;
+  font-size: 4.5rem;
+  font-weight: 900;
+  text-shadow: 0 4px 8px rgba(0,0,0,.6);
+}
+
+.topnav {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,.6), rgba(0,0,0,0));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 1rem 1.5rem 1rem 2rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 3;
+}
+
+.logo {
+  line-height: 2rem;
+  margin: 0;
+
+  &:hover {
+    opacity: .8;
+  }
+}
+
+.topnavList {
+  float: right;
+  margin-bottom: 0;
+}
+
+.topnavListItem {
+  display: inline-block;
+  margin: 0;
+}
+
+.listLink {
+  color: white;
+  display: block;
+  line-height: 2rem;
+  padding: .2rem 1rem;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.heroImageContainer {
+  height: 100%;
+  position: relative;
+}
+
+.featuredImage {
+  height: 100%;
+}

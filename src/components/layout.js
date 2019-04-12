@@ -9,9 +9,9 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
-import Header from "./Header"
-import "./layout.scss"
-import "./css/footer.scss"
+// import Header from "./Header"
+import "../styles/layout.scss"
+import "../styles/footer.scss"
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -26,11 +26,10 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <div style={{
-          paddingTop: 0,
-        }}>
-          <main style={{ paddingTop: `0` }}>{children}</main>
+        <div>
+          <main className="main">
+            {children}
+          </main>
           <footer className="footer">
             © {new Date().getFullYear()} Worldviamylens
           </footer>

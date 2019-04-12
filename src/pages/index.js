@@ -6,50 +6,45 @@ import { Image } from "../components/Image.js"
 import Gallerybox from "../components/Gallerybox.js"
 
 import SEO from "../components/seo"
+import styles from "../styles/gallery.module.scss"
+import headerStyles from "../styles/header.module.scss"
+import ListLink from "../components/Topnav.js"
+import galleryStyles from "../styles/gallery.module.scss"
+import { Link } from "gatsby"
 import Button from "../components/button"
-import styles from "../components/css/gallery.module.scss"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <div style={{ 
-      position: `relative`
-    }}>
-      <div style={{
-        display: `flex`,
-        justifyContent: `center`,
-        alignItems: `center`,
-        position: `absolute`,
-        top: `0`,
-        right: `0`,
-        bottom: `0`,
-        left: `0`,
-        textAlign: `center`,
-        zIndex: `2`
-      }}>
-        <div>
-          <h1 style={{ 
-            color:`white`,
-            fontSize: `4.5rem`,
-            fontWeight: `900`,
-            textShadow: `0 4px 8px rgba(0,0,0,.6)`
-          }}>Iceland</h1>  
-
-          <Button to="/#gallery">View Gallery</Button>
+    
+    <header className={headerStyles.headerLarge}>
+      <div style={{position: `relative`}}>
+        <div className={headerStyles.topnav}>
+          <h1 className={headerStyles.logo}>
+            <Link to="/" style={{ color: `white`, display: `block`, fontSize: `1.1rem`, fontWeight: `900`, lineHeight: `2rem`, textDecoration: `none`, textTransform: `lowercase` }}>
+              worldviamylens
+            </Link>
+          </h1>
+          <ul className={headerStyles.topnavList}>
+            <ListLink to="/#gallery">Galleries</ListLink>
+            <ListLink to="/about">About</ListLink>
+            <ListLink to="/blog">Blog</ListLink>
+            <li style={{ display: `inline-block` }}><a href="https://www.instagram.com/worldviamylens" style={{ color: `white`, padding: `.2rem 1rem`, textDecoration: `none` }}>Instagram</a></li>
+          </ul>
         </div>
-        
       </div>
-      <div style={{
-        height: `100vh`,
-        padding: `1rem`,
-        position: `relative`
-      }}>
-        <div className={styles.overlayFeaturedImage}></div>
-        <Image className="featuredImage" filename="iceland-1.jpg" sizes={{aspectRatio: 4/3}} />
+      <div className={headerStyles.heroImageContainer}>
+        <div className={headerStyles.titleContainer}>
+          <div className={headerStyles.titleInnerContainer}>
+            <h1 className={headerStyles.title}>Iceland</h1>
+            <Button to="/iceland">View Gallery</Button>
+          </div>
+        </div>
+        <div className={galleryStyles.overlayFeaturedImage}></div>
+        <Image className={headerStyles.featuredImage} filename="iceland-1.jpg" sizes={{aspectRatio: 4/3}} />
       </div>
-      
-      
-    </div>
+    </header>
+
     <div id="gallery" style={{
       display: `flex`,
       flexWrap: `wrap`,
