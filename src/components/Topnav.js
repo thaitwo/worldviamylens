@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import headerStyles from "../styles/header.module.scss"
+import headerStyles from "../styles/_header.module.scss"
 
 const ListLink = props => (
  <li className={headerStyles.topnavListItem}>

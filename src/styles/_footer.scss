@@ -7,8 +7,12 @@
   color: #cccccc;
   font-size: 13px;
   letter-spacing: .4rem;
-  margin: 1rem 5rem 1rem;
+  margin: 6rem 5rem 1rem;
   padding: 2rem 2rem 1rem;
   text-align: center;
   text-transform: uppercase;
+
+  @media only screen and (max-width: $mq-sm) {
+    margin: 3rem 1rem 1rem;
+  }
 }

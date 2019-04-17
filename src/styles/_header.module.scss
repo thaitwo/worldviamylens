@@ -2,11 +2,17 @@
 ** HEADER
 */
 
+@import "variables";
+
 .header {
   height: 25rem;
   padding: 1rem;
   position: relative;
   z-index: 3;
+
+  @media only screen and (max-width: $mq-sm) {
+    padding: 0;
+  }
 }
 
 .headerLarge {
@@ -14,6 +20,10 @@
   padding: 1rem;
   position: relative;
   z-index: 3;
+
+  @media only screen and (max-width: $mq-sm) {
+    padding: 0 0 1rem 0;
+  }
 }
 
 .titleContainer {

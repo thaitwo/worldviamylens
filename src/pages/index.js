@@ -6,10 +6,9 @@ import { Image } from "../components/Image.js"
 import Gallerybox from "../components/Gallerybox.js"
 
 import SEO from "../components/seo"
-import styles from "../styles/gallery.module.scss"
-import headerStyles from "../styles/header.module.scss"
+import headerStyles from "../styles/_header.module.scss"
 import ListLink from "../components/Topnav.js"
-import galleryStyles from "../styles/gallery.module.scss"
+import galleryStyles from "../styles/_gallery.module.scss"
 import { Link } from "gatsby"
 import Button from "../components/button"
 

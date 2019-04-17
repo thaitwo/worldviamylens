@@ -3,9 +3,8 @@ import PropTypes from "prop-types"
 import React from "react"
 import { Image } from "../components/Image.js"
 import ListLink from "./Topnav.js"
-import galleryStyles from "../styles/gallery.module.scss"
-import headerStyles from "../styles/header.module.scss"
-import Button from "../components/button"
+import galleryStyles from "../styles/_gallery.module.scss"
+import headerStyles from "../styles/_header.module.scss"
 
 const Header = (props) => (
   <header className={headerStyles.header}>
