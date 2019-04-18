@@ -4,7 +4,7 @@ import { Image } from "../components/Image.js"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Header from "../components/Header"
-import "gridlex"
+// import "gridlex"
 
 const AboutPage = () => (
   <Layout>
