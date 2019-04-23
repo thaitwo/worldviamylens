@@ -44,6 +44,7 @@ export const Image = (props) => (
       }
 
       const imageSizes = image.node.childImageSharp.sizes;
+      // console.log('hey', image.node.childImageSharp);
       return (
         <Img
           alt={props.alt}

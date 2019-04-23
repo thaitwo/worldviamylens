@@ -1,48 +1,73 @@
-import React from "react"
-import { Image } from "../components/Image.js"
+import React from "react";
+import { Image } from "../components/Image.js";
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import Header from "../components/Header"
-import 'masonry-layout'
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import Header from "../components/Header";
 
-export default () => (
-  <Layout>
-    <SEO title="Iceland" />
+class Gallery extends React.Component {
 
-    <Header pageTitle="Iceland" bgFile="iceland-1.jpg"/>
+  componentDidMount() {
+    const Masonry = require('masonry-layout');
     
-    <div className="grid-masonry" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": ".grid-sizer" }'>
-      <div className="grid-sizer"></div>
-      <div className="grid-item">
-        <Image filename="iceland-2.jpg" width="300" height="200" />
-      </div>
-      <div className="grid-item">
-        <Image filename="iceland-3.jpg" />
-      </div>
-      <div className="grid-item">
-        <Image filename="iceland-8.jpg" />
-      </div>
-      <div className="grid-item">
-        <Image filename="iceland-5.jpg" />
-      </div>
-      <div className="grid-item">
-        <Image filename="iceland-6.jpg" />
-      </div>
-      <div className="grid-item">
-        <Image filename="iceland-7.jpg" />
-      </div>
-      <div className="grid-item">
-        <Image filename="iceland-4.jpg" />
-      </div>
-      <div className="grid-item">
-        <Image filename="iceland-9.jpg" />
-      </div>
-      <div className="grid-item">
-        <Image filename="iceland-10.jpg" />
-      </div>
-    </div>
-    
-  </Layout>
-)
+    // Initialize Masonry gallery
+    const container = document.querySelector('.grid-masonry');
+    const gall = new Masonry( container, {
+      itemSelector: '.grid-masonry-item',
+      columnWidth: '.grid-sizer',
+      percentPosition: true
+    });
+  }
 
+  render() {
+    return (
+      <Layout>
+          <SEO title="Iceland" />
+
+          <Header pageTitle="Iceland" bgFile="iceland-1.jpg"/>
+          
+          <ul className="grid-masonry">
+            <li className="grid-sizer"></li>
+            <li className="grid-masonry-item">
+              <Image filename="iceland-2.jpg" />
+            </li>
+            <li className="grid-masonry-item">
+              <Image filename="iceland-3.jpg" />
+            </li>
+            <li className="grid-masonry-item">
+              <Image filename="iceland-8.jpg" />
+            </li>
+            <li className="grid-masonry-item">
+              <Image filename="iceland-5.jpg" />
+            </li>
+            <li className="grid-masonry-item">
+              <Image filename="iceland-4.jpg" />
+            </li>
+            <li className="grid-masonry-item">
+              <Image filename="iceland-7.jpg" />
+            </li>
+            <li className="grid-masonry-item">
+              <Image filename="iceland-6.jpg" />
+            </li>
+            <li className="grid-masonry-item">
+              <Image filename="iceland-9.jpg" />
+            </li>
+            <li className="grid-masonry-item">
+              <Image filename="iceland-10.jpg" />
+            </li>
+            <li className="grid-masonry-item">
+              <Image filename="iceland-11.jpg" />
+            </li>
+            <li className="grid-masonry-item">
+              <Image filename="iceland-12.jpg" />
+            </li>
+            <li className="grid-masonry-item">
+              <Image filename="iceland-13.jpg" />
+            </li>
+          </ul>
+        </Layout>
+    )
+  }
+}
+
+export default Gallery;

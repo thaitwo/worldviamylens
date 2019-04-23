@@ -4,7 +4,8 @@
 
 .grid-masonry {
   background: #EEE;
-  // max-width: 1200px;
+  list-style: none;
+  margin: 0;
 }
 
 /* clearfix */
@@ -16,7 +17,7 @@
 
 /* ---- grid-item ---- */
 .grid-sizer,
-.grid-item {
+.grid-masonry-item {
   width: 25%;
   @media only screen and (max-width: $mq-md) {
     width: calc(100%/3);
@@ -25,8 +26,9 @@
     width: calc(100%/2);
   }
 }
-.grid-item {
+.grid-masonry-item {
   float: left;
+  margin-bottom: 0;
 }
 
 .grid-item--width2 { width: 320px; }
