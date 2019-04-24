@@ -3,9 +3,13 @@
 */
 
 .grid-masonry {
-  background: #EEE;
+  background: $white;
   list-style: none;
-  margin: 0;
+  margin: 0 1.25%;
+
+  @media only screen and (max-width: $mq-sm) {
+    margin: 0 2%;
+  }
 }
 
 /* clearfix */
@@ -16,25 +20,46 @@
 }
 
 /* ---- grid-item ---- */
-.grid-sizer,
+.grid-masonry-sizer,
 .grid-masonry-item {
-  width: 25%;
+  width: calc((100% - (1.25% * 3)) / 4);
   @media only screen and (max-width: $mq-md) {
-    width: calc(100%/3);
+    width: calc((100% - (1.25% * 2)) / 3);
   }
   @media only screen and (max-width: $mq-sm) {
-    width: calc(100%/2);
+    width: calc((100% - 2%) / 2);
+  }
+  @media only screen and (max-width: $mq-xs) {
+    width: 100%;
   }
 }
+
 .grid-masonry-item {
   float: left;
-  margin-bottom: 0;
+  margin-bottom: 1.25%;
+
+  @media only screen and (max-width: $mq-sm) {
+    margin-bottom: 2%;
+  }
 }
 
-.grid-item--width2 { width: 320px; }
-.grid-item--width3 { width: 480px; }
-.grid-item--width4 { width: 640px; }
+.grid-masonry-sizer {
+  margin-bottom: calc(-1.45rem / 2);
 
-.grid-item--height2 { height: 200px; }
-.grid-item--height3 { height: 260px; }
-.grid-item--height4 { height: 360px; }
+  @media only screen and (max-width: $mq-sm) {
+    margin-bottom: 2%;
+  }
+}
+
+.masonry-gutter-sizer {
+  width: 1.25%;
+
+  @media only screen and (max-width: $mq-sm) {
+    margin-bottom: 1.25%;
+    width: 2%;
+  }
+
+  @media only screen and (max-width: $mq-xs) {
+    width: 1rem;
+  }
+}
