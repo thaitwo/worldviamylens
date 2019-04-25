@@ -52,12 +52,12 @@ const IndexPage = () => (
       <Gallerybox filename="indonesia-1.jpg" title="Indonesia" href="/indonesia" alt="Tegalalang Rice Terrace in Bali, Indonesia" />
       <Gallerybox filename="myanmar.jpg" title="Myanmar" href="/myanmar" alt="Taung Wine Mountain" />
       <Gallerybox filename="vietnam-1.jpg" title="Vietnam" href="/vietnam" alt="Fish market in Vietnam" />
-      <Gallerybox filename="taiwan.jpg" title="Taiwan" href="/taiwan" alt="Taiwan" />
-      <Gallerybox filename="japan.jpg" title="Japan" href="/japan" alt="Japan" />
-      <Gallerybox filename="thailand.jpg" title="Thailand" href="/thailand" alt="Thailand" />
-      <Gallerybox filename="srilanka.jpg" title="Sri Lanka" href="/srilanka" alt="Sri Lanka" />
-      <Gallerybox filename="california.jpg" title="California" href="/california" alt="California" />
-      <Gallerybox filename="newyork.jpg" title="New York" href="/newyork" alt="New York" />
+      <Gallerybox filename="taiwan-1.jpg" title="Taiwan" href="/taiwan" alt="Taiwan" />
+      <Gallerybox filename="japan-1.jpg" title="Japan" href="/japan" alt="Japan" />
+      <Gallerybox filename="thailand-1.jpg" title="Thailand" href="/thailand" alt="Thailand" />
+      <Gallerybox filename="srilanka-1.jpg" title="Sri Lanka" href="/srilanka" alt="Sri Lanka" />
+      <Gallerybox filename="california-1.jpg" title="California" href="/california" alt="California" />
+      <Gallerybox filename="newyork-1.jpg" title="New York" href="/newyork" alt="New York" />
     </div>
   </Layout>
 )
