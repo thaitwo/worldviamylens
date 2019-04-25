@@ -10,6 +10,9 @@
   @media only screen and (max-width: $mq-sm) {
     margin: 0 2%;
   }
+  @media only screen and (max-width: $mq-xs) {
+    margin: 0 3%;
+  }
 }
 
 /* clearfix */
@@ -60,6 +63,6 @@
   }
 
   @media only screen and (max-width: $mq-xs) {
-    width: 1rem;
+    width: 2%;
   }
 }

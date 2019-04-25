@@ -6,8 +6,8 @@ import Gallery from "../components/gallery";
 
 export default () => (
   <Layout>
-    <SEO title="Iceland" />
-    <Header pageTitle="Iceland" bgFile="iceland-1.jpg"/>
-    <Gallery directory="iceland" />
+    <SEO title="Vietnam" />
+    <Header pageTitle="Vietnam" bgFile="vietnam-1.jpg"/>
+    <Gallery directory="vietnam" />
   </Layout>
 )

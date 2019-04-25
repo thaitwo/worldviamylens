@@ -28,7 +28,6 @@ const IndexPage = () => (
             <ListLink to="/#gallery">Galleries</ListLink>
             <ListLink to="/about">About</ListLink>
             <ListLink to="/blog">Blog</ListLink>
-            <li style={{ display: `inline-block` }}><a href="https://www.instagram.com/worldviamylens" style={{ color: `white`, padding: `.2rem 1rem`, textDecoration: `none` }}>Instagram</a></li>
           </ul>
         </div>
       </div>
@@ -50,15 +49,15 @@ const IndexPage = () => (
       justifyContent: `space-between`,
       margin: `0 1rem 2rem`
     }}>
-      <Gallerybox filename="bali.jpg" title="Indonesia" href="/about" alt="Tegalalang Rice Terrace in Bali, Indonesia" />
-      <Gallerybox filename="myanmar.jpg" title="Myanmar" href="/about" alt="Taung Wine Mountain" />
-      <Gallerybox filename="vietnam.jpg" title="Vietnam" href="/about" alt="Fish market in Vietnam" />
-      <Gallerybox filename="taiwan.jpg" title="Taiwan" href="/about" alt="Taiwan" />
-      <Gallerybox filename="japan.jpg" title="Japan" href="/about" alt="Japan" />
-      <Gallerybox filename="thailand.jpg" title="Thailand" href="/about" alt="Thailand" />
-      <Gallerybox filename="srilanka.jpg" title="Sri Lanka" href="/about" alt="Sri Lanka" />
-      <Gallerybox filename="california.jpg" title="California" href="/about" alt="California" />
-      <Gallerybox filename="newyork.jpg" title="New York" href="/about" alt="New York" />
+      <Gallerybox filename="indonesia-1.jpg" title="Indonesia" href="/indonesia" alt="Tegalalang Rice Terrace in Bali, Indonesia" />
+      <Gallerybox filename="myanmar.jpg" title="Myanmar" href="/myanmar" alt="Taung Wine Mountain" />
+      <Gallerybox filename="vietnam-1.jpg" title="Vietnam" href="/vietnam" alt="Fish market in Vietnam" />
+      <Gallerybox filename="taiwan.jpg" title="Taiwan" href="/taiwan" alt="Taiwan" />
+      <Gallerybox filename="japan.jpg" title="Japan" href="/japan" alt="Japan" />
+      <Gallerybox filename="thailand.jpg" title="Thailand" href="/thailand" alt="Thailand" />
+      <Gallerybox filename="srilanka.jpg" title="Sri Lanka" href="/srilanka" alt="Sri Lanka" />
+      <Gallerybox filename="california.jpg" title="California" href="/california" alt="California" />
+      <Gallerybox filename="newyork.jpg" title="New York" href="/newyork" alt="New York" />
     </div>
   </Layout>
 )

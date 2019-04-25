@@ -16,7 +16,7 @@ import Img from "gatsby-image"
 
 export const Image = (props) => (
   <StaticQuery
-    query={graphql`
+    query = {graphql`
       query {
         images: allFile {
           edges {
@@ -33,16 +33,17 @@ export const Image = (props) => (
         }
       }
     `}
-    render={(data) => {
+    render = {(data) => {
+      // console.log('DATA', data);
       // Find and fetch the image based on filename
-      const image = data.images.edges.find(n => {
-        return n.node.relativePath.includes(props.filename);
+      const image = data.images.edges.find(item => {
+        return item.node.relativePath.includes(props.filename);
       });
       // Return null if no image exist
       if (!image) {
         return null;
       }
-
+      
       const imageSizes = image.node.childImageSharp.sizes;
       // console.log('hey', image.node.childImageSharp);
       return (
