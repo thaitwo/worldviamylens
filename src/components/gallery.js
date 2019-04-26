@@ -45,7 +45,7 @@ class Gallery extends React.Component {
     
     const imagesHTML = galleryImages.map((image, index) => {
       const imageSize = image.node.childImageSharp.sizes;
-      const filePath = image.node.relativePath;
+      const filePath = image.node.childImageSharp.sizes.src;
 
       return (
         <li className="grid-masonry-item" key={index}>
@@ -115,15 +115,20 @@ class Gallery extends React.Component {
     const images = [];
 
     $galleryContainer.find('li.grid-masonry-item a').each(function() {
-      const thumbImage = $(this).find('.gatsby-image-wrapper img')[0];
+      const smallImage = $(this).find('.gatsby-image-wrapper img')[0];
       const image = $(this).find('.gatsby-image-wrapper picture img');
+      const smallWidth = smallImage.clientWidth;
+      const smallHeight = smallImage.clientHeight;
+      const largeHeight = ((smallHeight/smallWidth) * 1000);
+      
+      // Get filepath for large version of image
       let url = image.prevObject[0].text;
       url = url.split(',')[5].split(' ')[0];
 
       const item = {
         src: url,
-        w: thumbImage.clientWidth,
-        h: thumbImage.clientHeight
+        w: 1000,
+        h: largeHeight
       }
       images.push(item);
     });
@@ -139,7 +144,7 @@ class Gallery extends React.Component {
       event.preventDefault();
 
       const options = {
-        index: $(this).parent('li').index(),
+        index: $(this).parent('li').index() - 2,
         bgOpacity: 0.9,
         showHideOpacity: true
       }
@@ -173,7 +178,7 @@ export default (props) => (
               relativePath
               name
               childImageSharp {
-                sizes(maxWidth: 600) {
+                sizes(maxWidth: 500) {
                   ...GatsbyImageSharpSizes
                 }
               }
