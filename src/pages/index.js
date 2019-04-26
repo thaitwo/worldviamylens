@@ -1,5 +1,4 @@
 import React from "react"
-// import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import { Image } from "../components/Image.js"
@@ -50,7 +49,7 @@ const IndexPage = () => (
       margin: `0 1rem 2rem`
     }}>
       <Gallerybox filename="indonesia-1.jpg" title="Indonesia" href="/indonesia" alt="Tegalalang Rice Terrace in Bali, Indonesia" />
-      <Gallerybox filename="myanmar.jpg" title="Myanmar" href="/myanmar" alt="Taung Wine Mountain" />
+      <Gallerybox filename="myanmar-1.jpg" title="Myanmar" href="/myanmar" alt="Taung Wine Mountain" />
       <Gallerybox filename="vietnam-1.jpg" title="Vietnam" href="/vietnam" alt="Fish market in Vietnam" />
       <Gallerybox filename="taiwan-1.jpg" title="Taiwan" href="/taiwan" alt="Taiwan" />
       <Gallerybox filename="japan-1.jpg" title="Japan" href="/japan" alt="Japan" />
