@@ -1,0 +1,33 @@
+/*
+** ABOUT
+*/
+
+.about-welcome-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  @media only screen and (max-width: $mq-sm) {
+    flex-direction: column;
+    align-items: unset;
+  }
+}
+
+.about-welcome-image {
+  flex: 1;
+  margin-right: 3rem;
+
+  @media only screen and (max-width: $mq-sm) {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+}
+
+.about-welcome-text {
+  flex: 2;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}

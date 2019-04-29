@@ -4,7 +4,6 @@ import { Image } from "../components/Image.js"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Header from "../components/Header"
-// import "gridlex"
 
 const AboutPage = () => (
   <Layout>
@@ -13,11 +12,11 @@ const AboutPage = () => (
     <Header pageTitle="About" bgFile="myanmar.jpg"/>
     <div className="container">
       <div className="sectionPad">
-        <div className="grid-spaceBetween" style={{alignItems: `center`}}>
-          <div className="col-4_sm-12">
+        <div className="about-welcome-container">
+          <div className="about-welcome-image">
             <Image filename="thai.jpg" />
           </div>
-          <div className="col-7_sm-12">
+          <div className="about-welcome-text">
             <h2>Welcome to WorldViaMyLens!</h2>
             <p>I'm Thai, a photography enthusiast based in Northern California.</p>
             <p>I got into photography back in 2013 when I bought my first DSLR camera. Ever since, capturing majestic sceneries and memorable life moments have been a hobby and passion of mine.</p>

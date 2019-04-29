@@ -119,7 +119,7 @@ class Gallery extends React.Component {
       const image = $(this).find('.gatsby-image-wrapper picture img');
       const smallWidth = smallImage.clientWidth;
       const smallHeight = smallImage.clientHeight;
-      const largeHeight = ((smallHeight/smallWidth) * 1000);
+      const largeHeight = ((smallHeight/smallWidth) * 1200);
       
       // Get filepath for large version of image
       let url = image.prevObject[0].text;
@@ -127,7 +127,7 @@ class Gallery extends React.Component {
 
       const item = {
         src: url,
-        w: 1000,
+        w: 1200,
         h: largeHeight
       }
       images.push(item);
@@ -146,6 +146,7 @@ class Gallery extends React.Component {
       const options = {
         index: $(this).parent('li').index() - 2,
         bgOpacity: 0.9,
+        history: false,
         showHideOpacity: true
       }
       // Initializes and opens PhotoSwipe
@@ -178,7 +179,7 @@ export default (props) => (
               relativePath
               name
               childImageSharp {
-                sizes(maxWidth: 500) {
+                sizes(maxWidth: 600) {
                   ...GatsbyImageSharpSizes
                 }
               }
