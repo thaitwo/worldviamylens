@@ -48,15 +48,16 @@ const IndexPage = () => (
       justifyContent: `space-between`,
       margin: `0 1rem 2rem`
     }}>
-      <Gallerybox filename="indonesia-1.jpg" title="Indonesia" href="/indonesia" alt="Tegalalang Rice Terrace in Bali, Indonesia" />
-      <Gallerybox filename="myanmar-1.jpg" title="Myanmar" href="/myanmar" alt="Taung Wine Mountain" />
-      <Gallerybox filename="vietnam-1.jpg" title="Vietnam" href="/vietnam" alt="Fish market in Vietnam" />
-      <Gallerybox filename="taiwan-1.jpg" title="Taiwan" href="/taiwan" alt="Taiwan" />
-      <Gallerybox filename="japan-1.jpg" title="Japan" href="/japan" alt="Japan" />
-      <Gallerybox filename="thailand-1.jpg" title="Thailand" href="/thailand" alt="Thailand" />
-      <Gallerybox filename="srilanka-1.jpg" title="Sri Lanka" href="/srilanka" alt="Sri Lanka" />
       <Gallerybox filename="california-1.jpg" title="California" href="/california" alt="California" />
+      <Gallerybox filename="indonesia-1.jpg" title="Indonesia" href="/indonesia" alt="Tegalalang Rice Terrace in Bali, Indonesia" />
+      <Gallerybox filename="italy-1.jpg" title="Italy" href="/italy" alt="Taung Wine Mountain" />
+      <Gallerybox filename="japan-1.jpg" title="Japan" href="/japan" alt="Japan" />
+      <Gallerybox filename="myanmar-1.jpg" title="Myanmar" href="/myanmar" alt="Taung Wine Mountain" />
       <Gallerybox filename="newyork-1.jpg" title="New York" href="/newyork" alt="New York" />
+      <Gallerybox filename="srilanka-1.jpg" title="Sri Lanka" href="/srilanka" alt="Sri Lanka" />
+      <Gallerybox filename="taiwan-1.jpg" title="Taiwan" href="/taiwan" alt="Taiwan" />
+      <Gallerybox filename="thailand-1.jpg" title="Thailand" href="/thailand" alt="Thailand" />
+      <Gallerybox filename="vietnam-1.jpg" title="Vietnam" href="/vietnam" alt="Fish market in Vietnam" />
     </div>
   </Layout>
 )
