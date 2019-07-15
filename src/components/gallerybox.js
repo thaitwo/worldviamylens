@@ -1,6 +1,6 @@
 import React from "react"
 import styles from "../styles/_gallery.module.scss"
-import { Image } from "./Image.js"
+import { Image } from "./image.js"
 
 const Gallerybox = props => (
   <figure className={styles.galleryBox}>

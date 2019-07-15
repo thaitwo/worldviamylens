@@ -1,9 +1,9 @@
 import React from "react"
-import { Image } from "../components/Image.js"
+import { Image } from "../components/image.js"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Header from "../components/Header"
+import Header from "../components/header"
 
 const AboutPage = () => (
   <Layout>

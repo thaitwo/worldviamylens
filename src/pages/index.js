@@ -1,12 +1,12 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import { Image } from "../components/Image.js"
-import Gallerybox from "../components/Gallerybox.js"
+import { Image } from "../components/image.js"
+import Gallerybox from "../components/gallerybox.js"
 
 import SEO from "../components/seo"
 import headerStyles from "../styles/_header.module.scss"
-import ListLink from "../components/Topnav.js"
+import ListLink from "../components/topnav.js"
 import galleryStyles from "../styles/_gallery.module.scss"
 import { Link } from "gatsby"
 import Button from "../components/button"

@@ -5,7 +5,8 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "engines": {
-    "node": "8.11.2"
+    "node": "8.11.2",
+    "npm": "6.9.0"
   },
   "dependencies": {
     "gatsby": "^2.3.23",
