@@ -1,7 +1,7 @@
 import React from "react";
 import { StaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
-import imagesLoaded from "imagesLoaded";
+import imagesLoaded from "imagesloaded";
 import $ from "jquery";
 import PhotoSwipe from "photoswipe";
 import PhotoSwipeUI_Default from "photoswipe/dist/photoswipe-ui-default";

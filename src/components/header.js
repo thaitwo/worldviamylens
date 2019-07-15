@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import { Image } from "./image.js"
-import ListLink from "./topnav.js"
+import ListLink from "./Topnav.js"
 import galleryStyles from "../styles/_gallery.module.scss"
 import headerStyles from "../styles/_header.module.scss"
 

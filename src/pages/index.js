@@ -6,7 +6,7 @@ import Gallerybox from "../components/gallerybox.js"
 
 import SEO from "../components/seo"
 import headerStyles from "../styles/_header.module.scss"
-import ListLink from "../components/topnav.js"
+import ListLink from "../components/Topnav.js"
 import galleryStyles from "../styles/_gallery.module.scss"
 import { Link } from "gatsby"
 import Button from "../components/button"
