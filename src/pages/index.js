@@ -26,7 +26,6 @@ const IndexPage = () => (
           <ul className={headerStyles.topnavList}>
             <ListLink to="/#gallery">Galleries</ListLink>
             <ListLink to="/about">About</ListLink>
-            <ListLink to="/blog">Blog</ListLink>
           </ul>
         </div>
       </div>

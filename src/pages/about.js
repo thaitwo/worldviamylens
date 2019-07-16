@@ -9,7 +9,7 @@ const AboutPage = () => (
   <Layout>
     <SEO title="Page two" />
 
-    <Header pageTitle="About" bgFile="myanmar.jpg"/>
+    <Header pageTitle="About" bgFile="myanmar-1.jpg"/>
     <div className="container">
       <div className="sectionPad">
         <div className="about-welcome-container">
