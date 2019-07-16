@@ -1,13 +1,12 @@
 import React from "react"
 import { Image } from "../components/image.js"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Header from "../components/header"
 
 const AboutPage = () => (
   <Layout>
-    <SEO title="Page two" />
+    <SEO title="About" />
 
     <Header pageTitle="About" bgFile="myanmar-1.jpg"/>
     <div className="container">
