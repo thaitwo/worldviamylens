@@ -55,7 +55,7 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  padding: 1rem 1.5rem 1rem 2rem;
+  padding: 1rem;
   position: absolute;
   left: 0;
   right: 0;
@@ -63,8 +63,9 @@
 }
 
 .logo {
-  line-height: 2rem;
+  height: auto;
   margin: 0;
+  width: 48px;
 
   &:hover {
     opacity: .8;

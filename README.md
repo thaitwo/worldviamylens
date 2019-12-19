@@ -5,7 +5,7 @@
     Navigate into your new site’s directory and start it up.
 
     ```sh
-    gatsby develop
+    npm start
     ```
 
 1.  **Open the source code and start editing!**

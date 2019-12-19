@@ -12,7 +12,7 @@ const Header = (props) => (
       <div className={headerStyles.topnav}>
         <h1 className={headerStyles.logo}>
           <Link to="/" style={{ color: `white`, display: `block`, fontSize: `1.1rem`, fontWeight: `900`, lineHeight: `2rem`, textDecoration: `none`, textTransform: `lowercase` }}>
-            worldviamylens
+            <Image filename="logo.png" />
           </Link>
         </h1>
         <ul className={headerStyles.topnavList}>

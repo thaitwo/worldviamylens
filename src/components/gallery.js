@@ -11,6 +11,7 @@ import "photoswipe/dist/default-skin/default-skin.css";
 class Gallery extends React.Component {
 
   componentDidMount() {
+    console.log(this.props);
     const Masonry = require('masonry-layout');
 
     // Initialize Masonry gallery

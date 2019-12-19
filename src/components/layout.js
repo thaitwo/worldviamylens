@@ -5,9 +5,10 @@
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
 
-import React from "react"
-import PropTypes from "prop-types"
-import { StaticQuery, graphql } from "gatsby"
+import React from "react";
+import PropTypes from "prop-types";
+import { Image } from "../components/image.js";
+import { StaticQuery, graphql } from "gatsby";
 
 // import Header from "./Header"
 import "../styles/styles.scss"
@@ -30,7 +31,8 @@ const Layout = ({ children }) => (
             {children}
           </main>
           <footer className="footer">
-            © {new Date().getFullYear()} Worldviamylens
+            <Image className="footer-logo" filename="logo-alt.png" />
+            <div>World Via My Lens</div>
           </footer>
         </div>
       </>

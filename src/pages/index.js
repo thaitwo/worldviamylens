@@ -1,15 +1,15 @@
-import React from "react"
+import React from "react";
 
-import Layout from "../components/layout"
-import { Image } from "../components/image.js"
-import Gallerybox from "../components/gallerybox.js"
+import Layout from "../components/layout";
+import { Image } from "../components/image.js";
+import Gallerybox from "../components/gallerybox.js";
 
-import SEO from "../components/seo"
-import headerStyles from "../styles/_header.module.scss"
-import ListLink from "../components/Topnav.js"
-import galleryStyles from "../styles/_gallery.module.scss"
-import { Link } from "gatsby"
-import Button from "../components/button"
+import SEO from "../components/seo";
+import headerStyles from "../styles/_header.module.scss";
+import ListLink from "../components/Topnav.js";
+import galleryStyles from "../styles/_gallery.module.scss";
+import { Link } from "gatsby";
+import Button from "../components/button";
 
 const IndexPage = () => (
   <Layout>
@@ -19,8 +19,8 @@ const IndexPage = () => (
       <div style={{position: `relative`}}>
         <div className={headerStyles.topnav}>
           <h1 className={headerStyles.logo}>
-            <Link to="/" style={{ color: `white`, display: `block`, fontSize: `1.1rem`, fontWeight: `900`, lineHeight: `2rem`, textDecoration: `none`, textTransform: `lowercase` }}>
-              worldviamylens
+            <Link className="logo" to="/" style={{ color: `white`, display: `block`, fontSize: `0.1rem`, fontWeight: `900`, lineHeight: `2rem`, textDecoration: `none`, textTransform: `lowercase` }}>
+              <Image filename="logo.png" />
             </Link>
           </h1>
           <ul className={headerStyles.topnavList}>
@@ -44,7 +44,7 @@ const IndexPage = () => (
     <div id="gallery" style={{
       display: `flex`,
       flexWrap: `wrap`,
-      justifyContent: `space-between`,
+      justifyContent: `flex-start`,
       margin: `0 1rem 2rem`
     }}>
       <Gallerybox filename="california-1.jpg" title="California" href="/california" alt="Bay Bridge" />

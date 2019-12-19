@@ -7,9 +7,10 @@
   flex-basis: calc(100% / 3 - .66666667rem);
   flex-grow: unset;
   margin-bottom: 1rem;
+  margin-right: 1rem;
   position: relative;
 
-  &:nth-child(3) {
+  &:nth-child(3n) {
     margin-right: 0;
   }
 
