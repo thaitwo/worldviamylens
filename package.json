@@ -9,7 +9,7 @@
     "npm": "6.9.0"
   },
   "dependencies": {
-    "gatsby": "^2.18.15",
+    "gatsby": "^2.32.13",
     "gatsby-image": "^2.2.37",
     "gatsby-plugin-manifest": "^2.2.33",
     "gatsby-plugin-offline": "^2.2.10",
