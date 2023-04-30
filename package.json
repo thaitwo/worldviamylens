@@ -20,7 +20,7 @@
     "gatsby-transformer-sharp": "^2.3.9",
     "gridlex": "^2.7.1",
     "imagesloaded": "^4.1.4",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "masonry-layout": "^4.2.2",
     "node-sass": "^4.13.0",
     "photoswipe": "^4.1.3",
